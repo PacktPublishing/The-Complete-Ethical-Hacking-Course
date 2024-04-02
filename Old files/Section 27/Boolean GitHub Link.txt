@@ -1,0 +1,2 @@
+Boolean GitHub Link
+You can reach from here: https://github.com/atilsamancioglu/PythonCourse/blob/master/08-Boolean.ipynb

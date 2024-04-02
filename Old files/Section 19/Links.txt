@@ -1,0 +1,5 @@
+https://lookup.icann.org/
+
+https://www.yougetsignal.com/tools/web-sites-on-web-server/
+
+https://searchdns.netcraft.com/?host=netcraft.com&x=14&y=11

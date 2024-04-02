@@ -1,0 +1,6 @@
+Necessary Links
+Please find the links below which you will be using in the following lectures:
+
+Digital Ocean Signup with Credit Link: https://m.do.co/c/5ecb7c546723
+
+GitHub Game Link: https://github.com/atilsamancioglu/2048

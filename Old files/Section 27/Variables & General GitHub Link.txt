@@ -1,0 +1,14 @@
+Variables & General GitHub Link
+Hi,
+
+You can reach the codes that I'm writing in the lectures from the GitHub link below. However it is not compulsory for you to do that, in fact it is better for you to write your own codes and just see these GitHub links as a reference, in case you get an error or some other difficulty in the process.
+
+Variables Notebook:
+
+https://github.com/atilsamancioglu/PythonCourse/blob/master/01-Variables.ipynb
+
+General Python Notebook Link:
+
+https://github.com/atilsamancioglu/PythonCourse
+
+Tools that we are going to write in Ethical Hacking part will be shared separately after each section.

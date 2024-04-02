@@ -1,7 +1,0 @@
-Imported vs Direct GitHub Link
-You can reach from here:
-
-https://github.com/atilsamancioglu/PythonCourse/blob/master/26-yoda.py
-
-https://github.com/atilsamancioglu/PythonCourse/blob/master/27-anakin.py
-
